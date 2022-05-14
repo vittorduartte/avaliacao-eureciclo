@@ -1,12 +1,10 @@
 from urllib import response
 from fastapi import FastAPI
-
+from .resources import index as index_routes
 
 def create_app():
     app = FastAPI()
 
-    @app.get("/", response_model=dict)
-    def index():
-        return {"Message": "Hello EuReciclo"}
+    index_routes.init(app)
 
     return app
