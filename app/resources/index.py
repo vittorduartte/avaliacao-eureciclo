@@ -7,7 +7,7 @@ def init(app):
 
     @router.get("/", response_model=dict)
     def index():
-        return {"Message", "Hello EuReciclo"}
+        return {"Message": "Hello EuReciclo"}
     
     app.include_router(router)
 
