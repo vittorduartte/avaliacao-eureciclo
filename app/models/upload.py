@@ -15,7 +15,7 @@ class Upload(Base):
     status = Column(Boolean, nullable=False, default=False)
     create_at = Column(Date, nullable=False, default=datetime.now().strftime('%Y-%m-%d'))
 
-    sales = relationship("Sale", back_populates="upload")
+    sales = relationship("Sale", back_populates="upload", cascade="all, delete-orphan")
 
     def __repr__(self):
         return f"Upload(id={self.id}, file_name={self.file_name}, status={self.status}, create_at={self.create_at})"
