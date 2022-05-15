@@ -10,7 +10,7 @@ class MyDatabase():
         self.name = name
     
     def get_engine(self):
-        return create_engine(f'sqlite+pysqlite:///{self.path}{self.name}')
+        return create_engine(f'sqlite+pysqlite:///{self.path}{self.name}.db')
 
     def get_base(self):
         Base = declarative_base()
