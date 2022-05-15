@@ -9,7 +9,6 @@ uvicorn = "*"
 sqlalchemy = "*"
 python-multipart = "*"
 unidecode = "*"
-jinja2 = "*"
 
 [dev-packages]
 
