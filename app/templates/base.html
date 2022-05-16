@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <title>EuRecilo - Avaliação Desenvolvedor Python</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{{  url_for('static', path='style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="title">Registro de vendas</h1>
+    </header>
+    <hr>
+    <main class="container">
+        <div id="content">{% block content %}{% endblock %}</div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Avaliação Desenvolvedor Python - <strong>EuReciclo</strong></p>
+            <p>
+                Este projeto utiliza <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', path='index.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</body>
+
+</html>

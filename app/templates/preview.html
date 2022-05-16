@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table is-fullwidth">
+    <thead>
+        <tr>
+            <th>Comprador</th>
+            <th>Descrição</th>
+            <th>Preço Unitário</th>
+            <th>Quantidade</th>
+            <th>Endereço</th>
+            <th>Fornecedor</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Comprador</th>
+            <th>Descrição</th>
+            <th>Preço Unitário</th>
+            <th>Quantidade</th>
+            <th>Endereço</th>
+            <th>Fornecedor</th>
+            <th>Subtotal</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        {% for sale in sales %}
+            <tr>
+                <td>{{ sale['comprador'] }}</td>
+                <td>{{ sale['descricao'] }}</td>
+                <td>{{ sale['preco_unitario'] }}</td>
+                <td>{{ sale['quantidade'] }}</td>
+                <td>{{ sale['endereco'] }}</td>
+                <td>{{ sale['fornecedor'] }}</td>
+                <td>{{ sale['total'] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<h2 class="subtitle total-sale"><strong>Total:</strong> R$ {{ total }}</h2>
+<hr>
+<button class="button is-medium is-fullwidth is-info back-to-send">Enviar novo arquivo</button>
+{% endblock %}
