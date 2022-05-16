@@ -18,3 +18,31 @@ Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize o
 - [x] Utilizar apenas linguagens e bibliotecas livres ou gratuitas;
 - [ ] Ter testes de model e controller automatizados;
 - [x] Ter uma boa aparência e ser fácil de usar.
+
+### Executando o projeto
+
+1. Verifique suas dependências
+
+Para execução do projeto a máquina deve ter o **docker** e **docker-compose** instalados. 
+
+2. Crie o diretório para o volume de banco de dados
+    Execute o seguinte comando:
+```
+mkdir database
+```
+
+3. Execute o projeto com o comando:
+
+```
+docker-compose up -d
+```
+
+ou 
+
+```
+sudo docker-compose up --build -d
+```
+
+4. Acesse a aplicação via navegador
+
+Através do endereço [**localhost:8000**](http://localhost:8080/)
