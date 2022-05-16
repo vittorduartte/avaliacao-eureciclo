@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="notification is-danger">
+    <button class="delete back-to-send"></button>
+    Erro na operação de envio de arquivo. Por favor, verifique o arquivo enviado e tente novamente.
+</div>
+<hr>
+<button class="button is-medium is-fullwidth is-info back-to-send">Enviar novo arquivo</button>
+<input type="hidden" id="custom-error" value="{{ error }}">
+<script>
+    error = document.getElementById("custom-error").value;
+    console.error(error);
+</script>
+{% endblock %}
