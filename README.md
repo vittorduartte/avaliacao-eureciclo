@@ -47,3 +47,7 @@ sudo docker-compose up --build -d
 4. Acesse a aplicação via navegador
 
 Através do endereço [**localhost:8000**](http://localhost:8080/)
+
+5. Enviar arquivos
+
+Os arquivos de exemplos encontram-se no diretório **./files** do projeto.
