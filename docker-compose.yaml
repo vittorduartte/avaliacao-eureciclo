@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  eureciclo:
+    build: .
+    command: python main.py
+    environment:
+      DATABASE_NAME: eureciclo_db
+      DATABASE_PATH: /tmp/
+    volumes:
+      - ./:/usr/src/app/
+      - ./database:/tmp/
+    ports:
+      - 8080:80
+
