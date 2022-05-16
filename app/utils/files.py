@@ -31,4 +31,4 @@ def scrapper(file: bytes):
         return {"dict": dict_sales, "class": class_sales, "total": total}
 
     except Exception as e:
-        raise ValueError("Erro ao extrair as informações. Verifique o arquivo enviado.")
+        raise ValueError("Erro ao normalizar os dados: {}".format(e.__str__()))
