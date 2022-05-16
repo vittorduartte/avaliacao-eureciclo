@@ -23,12 +23,13 @@ Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize o
 
 1. Verifique suas dependências
 
-Para execução do projeto a máquina deve ter o **docker** e **docker-compose** instalados. 
+Para execução do projeto a máquina deve ter o **docker** e **docker-compose** instalados.
 
-2. Crie o diretório para o volume de banco de dados
-    Execute o seguinte comando:
+2. Clone o repositório do projeto:
+
 ```
-mkdir database
+git clone https://github.com/vittorduartte/avaliacao-eureciclo
+cd avaliacao-eureciclo
 ```
 
 3. Execute o projeto com o comando:
@@ -37,7 +38,7 @@ mkdir database
 docker-compose up --build -d
 ```
 
-ou 
+ou
 
 ```
 sudo docker-compose up --build -d
