@@ -34,7 +34,7 @@ mkdir database
 3. Execute o projeto com o comando:
 
 ```
-docker-compose up -d
+docker-compose up --build -d
 ```
 
 ou 
