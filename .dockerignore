@@ -1,0 +1,9 @@
+Dockerfile
+docker-compose.yaml
+Pipfile
+Pipfile.lock
+README.md
+.git
+.gitignore
+database
+__pycache__/
