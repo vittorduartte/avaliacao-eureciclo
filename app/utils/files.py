@@ -20,14 +20,15 @@ def scrapper(file: bytes):
     Normalizando os dados
     '''
     try:
-
+        total = 0
         for sale in dict_sales:
             sale['preco_unitario'] = float(sale['preco_unitario'])
             sale['quantidade'] = int(sale['quantidade'])
             sale['total'] = sale['preco_unitario'] * sale['quantidade']
+            total += sale['total']
             class_sales.append(Sale(**sale))
         
-        return {"dict": dict_sales, "class": class_sales}
+        return {"dict": dict_sales, "class": class_sales, "total": total}
 
     except Exception as e:
         raise ValueError("Erro ao extrair as informações. Verifique o arquivo enviado.")
