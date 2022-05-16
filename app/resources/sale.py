@@ -28,9 +28,7 @@ def init(app):
             return templates.TemplateResponse("preview.html", {"request": request, "sales": sale_data["dict"], "total": sale_data["total"]})
 
         except Exception as e:
-            raise HTTPException(
-                status_code=400,
-                detail=e.__str__()
-            )
+            return templates.TemplateResponse("error.html", {"request": request, "error": e.__str__()})
+
 
     app.include_router(router)
