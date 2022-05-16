@@ -14,7 +14,7 @@ Sua tarefa é criar uma interface web que aceite upload de arquivos, normalize o
 - [x] Interpretar ("parsear") o arquivo recebido, normalizar os dados, e salvar corretamente a informação em um banco de dados relacional;
 - [x] Exibir todos os registros importados, bem como a receita bruta total dos registros contidos no arquivo enviado após o upload + parser;
 - [x] A aplicação deve ser escrita obrigatoriamente em: Python 3.7+ ou PHP 7+ (dependendo da vaga que está se candidatando), utilizando qualquer framework de preferência;
-- [ ] Executar via Docker ou Docker Compose;
+- [x] Executar via Docker ou Docker Compose;
 - [x] Utilizar apenas linguagens e bibliotecas livres ou gratuitas;
 - [ ] Ter testes de model e controller automatizados;
 - [x] Ter uma boa aparência e ser fácil de usar.
