@@ -46,7 +46,7 @@ sudo docker-compose up --build -d
 
 4. Acesse a aplicação via navegador
 
-Através do endereço [**localhost:8000**](http://localhost:8080/)
+Através do endereço [**localhost:8080**](http://localhost:8080/)
 
 5. Enviar arquivos
 
